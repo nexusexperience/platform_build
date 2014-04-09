@@ -143,6 +143,7 @@ class EdifyGenerator(object):
       self.script.append('set_metadata("/tmp/backuptool.functions", "uid", 0, "gid", 0, "mode", 0644);')
     self.script.append(('run_program("/tmp/backuptool.sh", "%s");' % command))
     if command == "restore":
+        self.script.append('run_program("/etc/run_busybox.sh");')
         self.script.append('delete("/system/bin/backuptool.sh");')
         self.script.append('delete("/system/bin/backuptool.functions");')
 
