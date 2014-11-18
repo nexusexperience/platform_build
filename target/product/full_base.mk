@@ -23,7 +23,8 @@ PRODUCT_PACKAGES := \
     libfwdlockengine \
     libWnnEngDic \
     libWnnJpnDic \
-    libwnndict
+    libwnndict \
+    WAPPushManager
 
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
